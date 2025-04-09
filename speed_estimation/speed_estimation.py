@@ -80,7 +80,7 @@ SPEED_LIMIT = config.getint('analyzer', 'speed_limit')
 SLIDING_WINDOW_SEC = config.getfloat('main', 'sliding_window_sec')
 FPS = config.getint('main', 'fps')
 CUSTOM_OBJECT_DETECTION = config.getboolean('main', 'custom_object_detection')
-FILE_EXTENSION = config.getboolean('main', 'file_extension')
+FILE_EXTENSION = config.get('main', 'file_extension')
 OBJECT_DETECTION_MIN_CONFIDENCE_SCORE = config.getfloat(
     'tracker', 'object_detection_min_confidence_score'
 )
