@@ -18,7 +18,7 @@ class ObjectDetection:
         """
         print("Loading Object Detection")
         print("Running opencv dnn with YOLOv4")
-        self.nmsThreshold = 0.4
+        self.nmsThreshold = 0.3
         self.confThreshold = 0.5
         self.image_size = 608
 

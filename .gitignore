@@ -150,3 +150,5 @@ speed_estimation/modules/depth_map/PixelFormer/pixelformer
 
 *.mp4
 *.jpg
+
+datasets/

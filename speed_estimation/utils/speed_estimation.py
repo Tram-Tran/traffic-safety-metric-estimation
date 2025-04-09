@@ -61,6 +61,7 @@ class TrackingBox:
         width: int,
         height: int,
         frame_count: int,
+        class_id: int,
     ) -> None:
         """Create an instance of TrackingBox.
 
@@ -86,6 +87,7 @@ class TrackingBox:
         self.width = width
         self.height = height
         self.frame_count = frame_count
+        self.class_id = class_id
 
 
 class Car:

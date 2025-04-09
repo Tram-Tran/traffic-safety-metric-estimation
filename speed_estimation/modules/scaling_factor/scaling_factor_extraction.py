@@ -196,6 +196,9 @@ class GeometricModel:
         unscaled_world_point.z_coord *= self.scale_factor
 
         return unscaled_world_point
+    
+    def get_world_point(self, cp: CameraPoint) -> WorldPoint:
+        return self.__get_world_point(cp)
 
     def __get_camera_point(self, wp: WorldPoint) -> CameraPoint:
         x, y, z = wp.coords()
