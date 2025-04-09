@@ -692,7 +692,7 @@ def main(session_path_local: str, path_to_video: str, enable_visual: bool):
                 enable_visual=enable_visual,
             )
 
-            for img in session_path_local:
+            for img in os.listdir(session_path_local):
                 if img.endswith('.jpg'):
                     os.remove(os.path.join(session_path_local, img))
 
