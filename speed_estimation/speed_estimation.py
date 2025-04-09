@@ -692,6 +692,10 @@ def main(session_path_local: str, path_to_video: str, enable_visual: bool):
                 enable_visual=enable_visual,
             )
 
+            for img in session_path_local:
+                if img.endswith('.jpg'):
+                    os.remove(os.path.join(session_path_local, img))
+
             if log_name is None:
                 print('Calibration did not finish, skip evaluation.')
             else:
